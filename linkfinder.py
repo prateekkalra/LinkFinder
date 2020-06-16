@@ -1,14 +1,15 @@
 #!/usr/bin/env python
-# Python 3
+# Python 2
 # LinkFinder
 # By Gerben_Javado
 
 # Fix webbrowser bug for MacOS
+import cgi as html
 import os
 os.environ["BROWSER"] = "open"
 
 # Import libraries
-import re, sys, glob, html, argparse, jsbeautifier, webbrowser, subprocess, base64, ssl, xml.etree.ElementTree
+import re, sys, glob, argparse, jsbeautifier, webbrowser, subprocess, base64, ssl, xml.etree.ElementTree
 
 from gzip import GzipFile
 from string import Template
